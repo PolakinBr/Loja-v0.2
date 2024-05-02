@@ -1,0 +1,44 @@
+body{
+    text-decoration-color: white;
+    text-align: center;
+    color: white;
+
+background-color: gray;
+
+
+}
+
+.content {
+    color: goldenrod;
+    box-shadow: 2px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.passworld{
+    color:burlywood;
+    width: 170vh;
+}
+
+.name{
+    color:burlywood;
+    width: 170vh;
+    text-size-adjust: 5px;
+    border-radius: 8px;
+}
+
+.background {
+    padding: 20px;
+    z-index:    1;
+}
+.login{
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    color: azure;
+    cursor: pointer;
+}

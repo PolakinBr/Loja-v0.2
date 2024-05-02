@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem-vindo ao Mercado Online Brasil">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Mercado Online Brasil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #ca9a72;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .login {
+            text-align: center;
+            background-color: rgb(253, 135, 0);
+            color: white;
+            padding: 4px;
+            margin-bottom: 20px;
+        }
+        .btn-login {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-login:hover {
+            background-color: white;
+            color: rgb(248, 124, 8);
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Mercado Online Brasil</h1>
+    </header>
+    
+    <main>
+        <div class="login" id="loginStatus">
+            <!-- O texto será inserido aqui com JavaScript -->
+        </div>
+        <H2>Bem vindo a loja Mercado Online Brasil</H2>
+
+        <header>
+            <div class="header-content">
+                <h1>Mercado Online Brasil</h1>
+                <div class="categorias">
+                    <div class="abacategorias" onmouseover="mostrarCategorias()" onmouseout="esconderCategorias()">Categorias</div>
+                    <div class="lista-categorias" id="lista-categorias">
+                        <ul>
+                            <li>Calçados</li>
+                            <li>Eletrônicos</li>
+                            <!-- Adicione mais categorias conforme necessário -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+
+            <div class="Boasvindas">
+                <a>Olá,que bom que você veio visitrar nossa loja, aqui temos tudo oque você procura no precinho.
+                    Abra nossas categorias e ache oque está procurando!
+                </a>
+            </div>
+<br>                    
+
+        <h2>Recomendações de produtos para você!</h2>
+        <a></a>
+        <!--   tenis    -->
+
+            <div class="product">
+                <h3>Tênis</h3><br>
+                <img src="imagens/download.jpeg" alt="Tênis">
+                <p>tenis da adidas</p>
+                <div class="tenisback">
+                    <div class="tenispreço">
+                        <p>Preço: R$ 250,00 
+                        </p>
+                
+                    </div>
+
+                    <div class="porapenastenis">
+                    <a>Por apenas R$199,99</a>
+                    </div>
+                </div>    
+                <br>
+                <br>
+                <button>Adicionar ao Carrinho</button>
+            
+        </div>
+
+        <!--  Alexa   -->
+        
+        <div class="product">
+            <h3>Alexa</h3>
+            <img src="imagens/alexa.jpeg" alt="Alexa">
+            <p>Alexa deixa o local mais inteligente.</p>
+                <div class="preçonormalalexa">
+                    <p>Preço: R$ 600,00</p>
+                </div>
+
+                <div class="porapenasalexa">
+                    <a>POR APENAS R$ 499,99</a>
+                </div>
+            <br>
+            <br>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        
+    </main>
+    <br>
+    <br>    
+    <br>    
+    <footer>
+        <p>&copy; 2024 Mercado Online Brasil</p>
+    </footer>
+    <br>
+    <br>    
+    <br>
+
+    <script>
+        // Simulação: definindo uma variável para representar se o usuário está cadastrado
+        var usuarioCadastrado = false;
+
+        // Verifica se o usuário está cadastrado e exibe o texto apropriado
+        if (usuarioCadastrado) {
+            document.getElementById("loginStatus").innerHTML = "<h2>Registrado</h2>";
+        } else {
+            document.getElementById("loginStatus").innerHTML = "<h2>Faça Login</h2><button class='btn-login' onclick='window.location.href=\"aula1.html\"'>Login</button>";
+        }
+    </script>
+</body>
+</html>
